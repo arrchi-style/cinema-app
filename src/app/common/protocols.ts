@@ -1,6 +1,5 @@
-export class Movie{
+export interface IMovie {
     id: number;
     name: string;
-    data: string;
-    price: number;
+    cost: number;
 }
