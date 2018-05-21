@@ -13,20 +13,21 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { SliderComponent } from './components/home/slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
 
-import { Dedpul } from '../app/common/data-movie';
 import { TodayMovieComponent } from './components/home/today-movie/today-movie.component';
+import { MovieService } from './components/movie.service';
 
-var appRoutes: Routes = [
+const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'profile', component: ProfileComponent },  
-  { path: 'movies', component: MoviesComponent },  
+  { path: 'profile', component: ProfileComponent },
+  { path: 'movies', component: MoviesComponent },
   { path: 'contacts', component: ContactsComponent },
-  { path: 'slider', component: SliderComponent }  
-]
+  { path: 'slider', component: SliderComponent }
+];
 
 @NgModule({
   declarations: [
@@ -44,9 +45,10 @@ var appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
