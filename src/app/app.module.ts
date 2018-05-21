@@ -15,6 +15,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { SliderComponent } from './components/home/slider/slider.component';
 
 import { Dedpul } from '../app/common/data-movie';
+import { TodayMovieComponent } from './components/home/today-movie/today-movie.component';
 
 var appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -38,7 +39,8 @@ var appRoutes: Routes = [
     ProfileComponent,
     MoviesComponent,
     ContactsComponent,
-    SliderComponent
+    SliderComponent,
+    TodayMovieComponent
   ],
   imports: [
     BrowserModule,
