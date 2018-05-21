@@ -10,7 +10,7 @@ import { Dedpul } from '../../../common/data-movie';
 })
 export class SliderComponent implements OnInit {
 
-  movie: Movie
+  movie: Movie;
 
   constructor() {
      this.movie = Dedpul;
