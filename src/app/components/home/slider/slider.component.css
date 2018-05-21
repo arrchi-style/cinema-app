@@ -1,0 +1,22 @@
+.carousel-item img {
+    height: 90vh;
+}
+
+.carousel-caption {
+    background: rgba(151, 151, 151, 0.8);
+    right: 0;
+    left: 0;
+    padding: 1% 10%;
+}
+
+h5 {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.slider__btn {
+    font-size: 25px;
+}
